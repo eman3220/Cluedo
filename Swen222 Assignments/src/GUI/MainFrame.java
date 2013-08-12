@@ -22,6 +22,8 @@ public class MainFrame extends JFrame{
 		this.add(gp);
 		this.add(bp, BorderLayout.SOUTH);
 		
+		System.out.println("Sup Imperial");
+		
 		this.show();
 	}
 
