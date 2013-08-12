@@ -29,8 +29,8 @@ public class ButtonPanel extends JPanel implements ActionListener{
 		bButton.addActionListener(this);
 		cButton.addActionListener(this);
 		this.add(aButton);
-		this.add(aButton);
-		this.add(aButton);
+		this.add(bButton);
+		this.add(cButton);
 	}
 
 
