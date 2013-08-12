@@ -9,6 +9,7 @@ import main.Cluedo;
 public class MainFrame extends JFrame{
 	
 	private Cluedo host;
+	private StatusPanel sp;
 	private GamePanel gp;
 	private ButtonPanel bp;
 	
@@ -24,8 +25,8 @@ public class MainFrame extends JFrame{
 		this.setLocation(10, 10);
 		this.setResizable(false);
 		this.setLayout(new BorderLayout());
-		this.gp = new GamePanel();
-		this.bp = new ButtonPanel();
+		this.gp = new GamePanel(host);
+		this.bp = new ButtonPanel(host);
 		this.add(gp);
 		this.add(bp, BorderLayout.SOUTH);
 

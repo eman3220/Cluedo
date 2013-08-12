@@ -6,20 +6,23 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
+import main.Cluedo;
+
 public class ButtonPanel extends JPanel implements ActionListener{
+	
+	private Cluedo host;
 	
 	private JButton aButton;
 	private JButton bButton;
 	private JButton cButton;
 	
-	
-	public ButtonPanel(){
+	public ButtonPanel(Cluedo host){
+		this.host = host;
 		this.setSize(WIDTH, 100);
 		this.setBackground(Color.DARK_GRAY);
 		buttonSetup();
 		
 	}
-
 
 	private void buttonSetup() {
 		this.aButton = new JButton("One");
