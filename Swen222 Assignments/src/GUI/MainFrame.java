@@ -22,7 +22,7 @@ public class MainFrame extends JFrame{
 		this.add(gp);
 		this.add(bp, BorderLayout.SOUTH);
 		
-		System.out.println("Sup Imperial");
+		System.out.println("Here is another commit");
 		
 		this.show();
 	}
