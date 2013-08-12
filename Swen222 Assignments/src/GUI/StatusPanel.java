@@ -15,6 +15,6 @@ public class StatusPanel extends JPanel{
 		this.setBackground(Color.DARK_GRAY);
 		this.setLayout(null);
 		
-		// don't forget to set bounds
+		// don't forget to set bounds...
 	}
 }
