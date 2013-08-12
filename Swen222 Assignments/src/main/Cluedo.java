@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
+import GUI.MainFrame;
+
 import collection.Envelope;
 
 import card.Card;
@@ -41,9 +43,13 @@ public class Cluedo {
 	private ArrayList<WeaponCard> listOfWeaponCard;
 	private ArrayList<LocationCard> listOfLocationCard;
 	private ArrayList<SuspectCard> listOfSuspectCard;
+	
+	private MainFrame mf;
 
 	public Cluedo(){
-		System.out.println("Welcome to Cluedo! Made by E-Man and Imperial");
+		this.mf = new MainFrame(this);
+		
+		System.out.println("Welcome to Cluedo! Made by E-Man and Imperial");		
 		initialiseLists();
 
 		this.dice = new Dice();
@@ -65,6 +71,10 @@ public class Cluedo {
 		distributeCards();
 
 		setTurnOrder();
+		
+		
+		
+		
 
 		System.out.println("Game setup finished");
 		MainThread mt = (MainThread) Thread.currentThread();

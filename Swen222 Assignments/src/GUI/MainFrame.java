@@ -17,19 +17,21 @@ public class MainFrame extends JFrame{
 		
 		initialiseFrame();
 		
-		this.gp = new GamePanel();
-		this.bp = new ButtonPanel();
 		this.add(gp);
 		this.add(bp, BorderLayout.SOUTH);
 		
-		System.out.println("Here is another commit");
 		
-		this.show();
+		
+		
 	}
 
 	private void initialiseFrame() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(500, 650);
+		this.setResizable(false);
 		this.setLayout(new BorderLayout());
-		
+		this.gp = new GamePanel();
+		this.bp = new ButtonPanel();
+		this.show();
 	}
 }
